@@ -1,0 +1,602 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: rgb(15, 15, 15);
+}
+nav{
+    background-color: rgb(4, 4, 4);
+    height: 80px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 999;
+    position: fixed;
+    border-bottom: 2px solid white;
+}
+.nh1{
+    color: white;
+    left: 10%;
+    position: absolute;
+    top: 24px;
+}
+.nh2{
+    color: white;
+    left: 90%;
+    position: absolute;
+    top: 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.nh2:hover{
+    background-color: white;
+    color: black;
+    letter-spacing: 1.1px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    position: absolute;
+    top: 22px;
+    left: 35%;
+    list-style: none;
+}
+nav ul li{
+    color: white;
+    font-size: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 2px solid rgb(4, 4, 4);
+}
+nav ul li:hover{
+    background-color: rgb(19, 63, 184);
+    border: 2px solid rgb(19, 63, 184);
+    border-radius: 50px;
+}
+#homeSec{
+    height: 91vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 70px;
+}
+.himg{
+    height: 100%;
+    width: 100%;
+    filter: blur(10px);
+}
+#homeSec h1{
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    top: 30%;
+    left: 10%;
+}
+#homeSec h2{
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    top: 40%;
+    left: 10%;
+}
+#startBtn{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    top: 60%;
+    left: 10%;
+    background-color: rgb(19, 63, 184);
+    border: 2px solid white;
+    border-radius: 50px;
+    height: 36px;
+    width: 200px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#startBtn:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+#allImpo{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 200px;
+    transition: 0.8s;
+    filter: blur(20px);
+    display: none;
+}
+#importantSec{
+    width: 70%;
+    height: 200px;
+    border-radius: 20px;
+    position: relative;
+    left: 15%;
+    top: 80px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+#importantSec h1{
+    color: white;
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.carts{
+    display: flex;
+    justify-content: space-between;
+}
+.cart{
+    height: 90%;
+    position: relative;
+    top: 10%;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 19%;
+    background-color: rgb(3, 3, 3);
+}
+.Timg{
+    height: 40%;
+    width: 30%;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: 27px;
+    left: 30px;
+}
+.price{
+    color: white;
+    position: relative;
+    top: -50px;
+    left: 60%;
+}
+.ratio{
+    color: rgb(7, 105, 7);
+    position: relative;
+    top: -36px;
+    left: 60%;
+}
+.ratioM{
+    color: rgb(201, 15, 15);
+    position: relative;
+    top: -36px;
+    left: 60%;
+}
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    position: relative;
+    left: 15%;
+}
+.box{
+    width: 100%;
+    height: 120px;
+    border-top: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+.svg{
+    height: 120px;
+    width: 120px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.svgelem{
+    position: relative;
+    top:0;
+    left: 0;
+    background-color:white;
+    transition: 0.2s;
+    position: relative;
+    top: 40%;
+    left: 10%;
+}
+.svgelem path{
+    fill: rgb(15, 15, 15);
+}
+.tradImg{
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: 34px;
+ /*   left: 10%;*/
+}
+.i{
+    color: white;
+    position: relative;
+    top: 40px;
+ /*   left: 5%;*/
+}
+.name{
+    color: white;
+    position: relative;
+    top: 36px;
+}
+.lastPrice{
+    color: white;
+    position: relative;
+    top: 36px;
+}
+.persent{
+    color: rgb(7, 105, 7);
+    position: relative;
+    top: 36px;
+}
+.tradeBtn{
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 2px solid rgb(19, 63, 184);
+    color: rgb(19, 63, 184);
+    height: 36px;
+    border-radius: 50px;
+    background-color: white;
+    position: relative;
+    top: 34px;
+    right: 10px;
+}
+.tradeBtn:hover{
+    background-color: rgb(19, 63, 184);
+    color: white;
+    border: 2px solid white;
+}
+.trLi1{
+    list-style: none;
+    color: white;
+    font-size: 22px;
+    position: relative;
+    left: 29.5%;
+    margin-bottom: 12px;
+}
+.trLi2{
+    list-style: none;
+    color: white;
+    font-size: 22px;
+    position: relative;
+    left: 47%;
+    margin-bottom: 12px;
+}
+.trLi3{
+    list-style: none;
+    color: white;
+    font-size: 22px;
+    position: relative;
+    left: 55.5%;
+    margin-bottom: 12px;
+}
+.trLi4{
+    list-style: none;
+    color: white;
+    font-size: 22px;
+    position: relative;
+    left: 63%;
+    margin-bottom: 12px;
+}
+#tradListSec{
+    position: relative;
+    top: 150px;
+}
+.persentM{
+    color: rgb(221, 18, 18);
+    position: relative;
+    top: 36px;
+}
+#newsSec{
+    background-color: rgb(4, 4, 4);
+    position: relative;
+    top: 200px;
+    padding-top: 14px;
+    padding-bottom: 36px;
+}
+.contents{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    position: relative;
+    left: 15%;
+}
+.news{
+    font-size: 38px;
+    color: white;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.content{
+    width: 24%;
+    height: 380px;
+    background-color: rgb(15, 15, 15);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.newsImg{
+    height: 200px;
+    width: 100%;
+    border-radius: 20px;
+}
+.newsTitle{
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 14px;
+    margin-top: 14px;
+}
+.p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 14px;
+    margin-top: 14px;
+}
+.more{
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 14px;
+    margin-top: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.more:hover{
+    letter-spacing: 1.2px;
+    color: rgb(19, 63, 184);
+}
+#subSec{
+    position: relative;
+    top: 260px;
+}
+.Subscription{
+    font-size: 38px;
+    color: white;
+    text-align: center;
+}
+.totale{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    position: relative;
+    left: 20%;
+}
+.single{
+    width: 27%;
+    height: 420px;
+    border-radius: 20px;
+    background-color: rgb(3, 3, 3);
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+.priceSub{
+    color: rgb(19, 63, 184);
+    text-align: center;
+    margin-top: 12px;
+    font-size: 36px;
+}
+.single ul{
+    list-style: none;
+    position: relative;
+    width: 80%;
+    left: 10%;
+    top: 20px;
+}
+.single ul li{
+    color: white;
+    font-size: 22px;
+    margin-top: 6px;
+}
+.type{
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 14px;
+}
+.pay{
+    text-decoration: none;
+    font-size: 24px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+    color: rgb(19, 63, 184);
+    position: relative;
+    top: 48px;
+    width: 20%;
+    left: 30%;
+}
+.pay:hover{
+    color: white;
+    text-shadow: 2px 2px 7px rgb(19, 63, 184);
+}
+#contactSec{
+    background-color: rgb(3, 3, 3);
+    height: 380px;
+    width: 100%;
+    position: relative;
+    top: 360px;
+}
+#contactSec h1{
+    color: white;
+    padding-top: 14px;
+    padding-bottom: 16px;
+    text-align: center;
+    font-size: 34px;
+}
+#nmInpt,#emInpt{
+    height: 36px;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 50px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    margin-top: 12px;
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
+#mesInpt{
+    height: 120px;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    margin-top: 12px;
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
+#sendBtn{
+    height: 36px;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 50px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    margin-top: 12px;
+    background-color: rgb(19, 63, 184);
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#sendBtn:hover{
+    background-color: white;
+    color: rgb(19, 63, 184);
+    letter-spacing: 2.2px;
+    border: 1px solid rgb(19, 63, 184);
+}
+#phoneSec{
+    width: 60%;
+    position: relative;
+    left: 20%;
+    top: 460px;
+    padding-bottom: 30px;
+}
+#phoneSec h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 14px;
+    font-size: 32px;
+}
+.imgsApps{
+    width: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 43%;
+}
+.storeImg{
+    cursor: pointer;
+}
+footer{
+    background-color: rgb(3, 3, 3);
+    height: 430px;
+    border-top: 2px solid white;
+    position: relative;
+    top: 520px;
+}
+footer h1{
+    color: white;
+    text-align: center;
+    margin-top: 14px;
+}
+.navSocial{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    left: 45%;
+    top: 18px;
+    position: relative;
+}
+.ftrImg{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.ftrImg:hover{
+    transform: rotate(360deg);
+    border: 1px solid rgb(19, 63, 184);
+}
+.uls{
+    width: 20%;
+    position: relative;
+    left: 42%;
+    display: flex;
+    justify-content: space-between;
+    top: 60px;
+}
+.ful{
+    width: 45%;
+}
+.ful h2{
+    color: white;
+}
+.ful ul{
+    list-style: none;
+    position: relative;
+    left: 20px;
+    top: 16px;
+}
+.ful ul li{
+    color: white;
+    font-size: 20px;
+    margin-top: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.ful ul li:hover{
+    color: rgb(19, 63, 184);
+    letter-spacing: 2.2px;
+}
+.lh1{
+    text-align: center;
+    color: white;
+    font-size: 34px;
+    position: relative;
+    top: 100px;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(19, 63, 184);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(21, 21, 37);
+}
